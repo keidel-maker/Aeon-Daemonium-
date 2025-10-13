@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 ¡ALERTA! ÆON DAEMONIUM - MÁXIMO CAOS HOUSE 🚨</title>
+    <style>
+        /* Fuentes estilo 2000s: Pixelado y Terminal */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+        /* ------------------------------------------------ */
+        /* ESTILOS DE FONDO Y CUERPO (¡Saturación Total!) */
+        /* ------------------------------------------------ */
+        body {
+            background: repeating-linear-gradient(
+                -45deg,
+                #FF00FF 0%,
+                #FF00FF 10px,
+                #00FFFF 10px,
+                #00FFFF 20px
+            ); /* Fondo de rayas diagonales: Magenta y Cian */
+            background-attachment: fixed;
+            color: #FFFF00; /* Texto amarillo neón */
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+            overflow-x: hidden;
+            border: 10px solid #FF0000; /* Borde rojo grueso e impactante */
+        }
+
+        /* Título Principal */
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            color: #FF0000; /* Rojo */
+            text-shadow: 4px 4px 0 #0000FF, 8px 8px 0 #00FF00; /* Efecto 3D caótico */
+            font-size: 2.5em;
+            margin: 10px 0;
+            animation: bounce 0.5s infinite alternate; /* Animación de rebote */
+        }
+
+        /* Subtítulo */
+        h2 {
+            font-family: 'VT323', monospace;
+            font-size: 1.5em;
+            color: #FFFFFF;
+            background-color: #000000;
+            padding: 5px;
+            display: inline-block;
+            border: 3px dashed #FFFF00;
+            margin-bottom: 20px;
+        }
+
+        /* ------------------------------------------------ */
+        /* CONTENEDOR CENTRAL: EL EPICENTRO DEL CAOS */
+        /* ------------------------------------------------ */
+        .container {
+            background: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente */
+            border: 8px double #00FF00; /* Borde doble verde neón */
+            box-shadow: 0 0 40px #FF00FF, 0 0 10px #0000FF inset; /* Resplandor y sombra interior extrema */
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Párrafos de promoción */
+        p {
+            font-family: 'VT323', monospace;
+            font-size: 1.2em;
+            color: #FF00FF; /* Magenta */
+            line-height: 1.5;
+            margin: 15px 0;
+            text-shadow: 1px 1px #000000;
+        }
+
+        /* ------------------------------------------------ */
+        /* ANIMACIONES Y DECORACIÓN (Saturación Visual) */
+        /* ------------------------------------------------ */
+
+        /* 1. Elemento parpadeante (Blinking GIF) */
+        .blinking-text {
+            color: #FF0000; /* Rojo alarma */
+            font-weight: bold;
+            font-size: 1.8em;
+            animation: blink 0.5s infinite step-end;
+            margin: 10px 0;
+            display: block;
+            background-color: #FFFF00; /* Fondo Amarillo */
+            padding: 5px;
+            border: 2px solid #000000;
+        }
+
+        /* 2. Banner Lateral con rotación (Web 1.0 Banner) */
+        .sidebar-banner {
+            position: fixed;
+            top: 50%;
+            right: -50px; /* Posición inicial fuera de la vista */
+            transform: translateY(-50%) rotate(15deg);
+            background: #0000FF;
+            color: #FFFFFF;
+            padding: 10px;
+            width: 150px;
+            border: 4px solid #FF00FF;
+            box-shadow: 0 0 15px #FF00FF;
+            animation: rotateBanner 5s linear infinite;
+            z-index: 20;
+            font-size: 0.8em;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        /* 3. Ticker (Marquesina extrema) */
+        .ticker {
+            font-size: 1em;
+            margin-top: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            color: #FF0000;
+            background-color: #00FFFF;
+            border-top: 5px solid #FFFF00;
+            border-bottom: 5px solid #FFFF00;
+            padding: 5px 0;
+            font-family: 'Press Start 2P', cursive;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 5;
+        }
+        .ticker span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 10s linear infinite; /* Más rápido y caótico */
+        }
+
+        /* ------------------------------------------------ */
+        /* ESTILO DEL BOTÓN (¡El foco!) */
+        /* ------------------------------------------------ */
+        .promo-button {
+            display: block; /* Ocupa todo el ancho */
+            background-color: #FF0000; /* Rojo Furioso */
+            color: #FFFFFF;
+            padding: 20px;
+            margin: 25px auto;
+            text-decoration: none;
+            border: 8px ridge #FFFF00; /* Borde tipo 3D/relieve */
+            box-shadow: 0 0 30px #FF00FF; /* Resplandor Magenta */
+            transition: background-color 0.1s, transform 0.1s;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-family: 'Press Start 2P', cursive;
+            animation: disco 2s infinite alternate; /* Botón que cambia de color */
+        }
+
+        .promo-button:hover {
+            background-color: #00FF00; /* Verde al pasar el mouse */
+            color: #FF0000;
+            transform: scale(1.1); /* Zoom exagerado */
+            box-shadow: 0 0 40px #00FF00;
+        }
+
+        /* ------------------------------------------------ */
+        /* DEFINICIÓN DE KEYFRAMES (Más Movimiento) */
+        /* ------------------------------------------------ */
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        @keyframes blink {
+            0%, 49% { visibility: visible; }
+            50%, 100% { visibility: hidden; }
+        }
+
+        @keyframes disco {
+            0% { background-color: #FF0000; border-color: #FFFF00; }
+            33% { background-color: #0000FF; border-color: #FF00FF; }
+            66% { background-color: #00FF00; border-color: #00FFFF; }
+            100% { background-color: #FF0000; border-color: #FFFF00; }
+        }
+
+        @keyframes rotateBanner {
+            0% { transform: translateY(-50%) rotate(15deg); }
+            50% { transform: translateY(-50%) rotate(-10deg); }
+            100% { transform: translateY(-50%) rotate(15deg); }
+        }
+
+        @keyframes ticker {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-banner">
+        ¡HOUSETRAXX 4 U!
+        <br>
+        (100% FREE DOWNLOADS*)
+    </div>
+
+    <h1>⚡ ¡ZONA CRÍTICA DE HOUSE! ⚡</h1>
+    <h2>>> A E O N   D A E M O N I U M <<</h2>
+
+    <div class="container">
+        <span class="blinking-text">¡ATENCION! ESTO NO ES UN SIMULACRO!</span>
+
+        <p>
+            <span style="color: #00FF00;">M A X I M A L</span> 
+            <span style="color: #FF00FF;"> B E A T S </span> 
+            <span style="color: #00FFFF;"> G L I T C H </span> 
+            <span style="color: #FFFF00;"> F E V E R </span>
+        </p>
+        <p>
+            ¡EL SONIDO QUE TU SISTEMA SIEMPRE NECESITO! <span style="font-size: 1.5em;">[PULSANDO...]</span>.
+        </p>
+        <p style="font-size: 0.9em; color: #FFFFFF;">
+            *Por favor, actualice su reproductor Flash. Se recomienda Internet Explorer 6, se advierte que esta música alterara de manera extrema el fundillo de quien la escuche.
+        </p>
+
+        <a href="https://youtube.com/@aeondaemonium?si=NL57TUVvPHe5lSF" target="_blank" class="promo-button">
+            ENTRE A SU PROPIO RIESGO
+        </a>
+
+        <span class="blinking-text">¡NO PUEDE PERDERSELO!</span>
+    </div>
+
+    <div class="ticker">
+        <span>!!! ADVERTENCIA: RIESGO DE COLAPSO MENTAL !!! ::: HOUSE ::: TECHNO ::: ACID ::: VIBES ::: FAST INTERNET REQUIRED ::: [404] PARTY NOT FOUND ::: ¡ESTÁ SUCEDIENDO!:::¡MALDITA SEA AHI VIENE! </span>
+    </div>
+
+    <p style="font-family: Arial, sans-serif; font-size: 0.7em; color: #000000; margin-top: 10px;">
+        © 2025 ÆON DAEMONIUM. A Nadie Le Importa Esto.
+    </p>
+
+</body>
+</html>
